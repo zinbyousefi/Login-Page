@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(128, 114, 141);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.circle_1{
+    width: 1000px;
+    height: 1000px;
+    background-color: rgb(86, 17, 135);
+    position: fixed;
+    border-radius: 100%;
+    z-index: -1;
+    left: -9rem;
+    top: 14%;
+}
+input:focus,input:active{
+    outline: none;
+    padding: 10px;
+}
+.login_page{
+    width: 81%;
+    max-width: 1200px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    border: 5px solid white;
+    overflow: hidden;
+
+}
+
+.login_page form {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(22px);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.login_page form h1{
+    color: white;
+    margin-bottom: 3rem;
+}
+.login-img{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    width: 50%;
+}
+
+.form-group label{
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: white;
+}
+.form-group input{
+    border: 2px solid white;
+    background-color: transparent;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.button-form {
+    width: 50%;
+}
+.button-form button{
+    background-color: white;
+    border: 2px solid white;
+    height: 40px;
+    width: 100%;
+    font-weight: bold;
+    border-radius: 20px;
+    color: black;
+    margin-bottom: 2rem;
+
+}
+
+.bottom-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.bottom-form p{
+    color: white;
+}
+.bottom-form a{
+    text-decoration: none;
+    color: rgb(41, 20, 56);
+    
+}
+
+@media screen and (max-width:760px) {
+    .login-img{
+        display: none;
+    }
+    .login_page form {
+        width: 100%;
+    }
+    .form-group,.button-form{
+        width: 80%;
+    }
+    
+}
+@media  screen and  (max-width:1200px) {
+    .login-img img{
+        width: 250px;
+        height: 100px;
+        object-fit: cover;
+    }
+    
+}
